@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_03_100DOS_Tap_Counter_" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bA-8t-tVD">
+                                <rect key="frame" x="291" y="28" width="68" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="YOc-9B-yKW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="1" green="0.17871402883578225" blue="0.13367345943691489" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWq-90-6tZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Counter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYf-Uu-nUB">
+                                <rect key="frame" x="116" y="2" width="142" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaY-3S-Oci">
+                                <rect key="frame" x="126" y="220" width="122" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="93" id="JrB-Yt-p33"/>
+                                    <constraint firstAttribute="width" constant="122" id="b4x-5A-Aem"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmZ-kZ-pN2">
+                                <rect key="frame" x="150" y="430" width="75" height="50"/>
+                                <color key="backgroundColor" red="0.81637659931489548" green="1" blue="0.98146079143028375" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="JMj-sl-IIw"/>
+                                    <constraint firstAttribute="height" constant="50" id="MO0-pX-oVS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" red="0.3611800343176651" green="0.52941886291272455" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnce:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o0d-cj-2vW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9bA-8t-tVD" secondAttribute="bottom" constant="608" id="6VI-hn-dD9"/>
+                            <constraint firstItem="TaY-3S-Oci" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="220" id="6gL-SE-Ivy"/>
+                            <constraint firstItem="fYf-Uu-nUB" firstAttribute="centerY" secondItem="9bA-8t-tVD" secondAttribute="centerY" id="8pv-L8-whs"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zmZ-kZ-pN2" secondAttribute="bottom" constant="187" id="ChI-9A-pXA"/>
+                            <constraint firstItem="9bA-8t-tVD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="MEW-7q-FS7"/>
+                            <constraint firstItem="fYf-Uu-nUB" firstAttribute="centerX" secondItem="TaY-3S-Oci" secondAttribute="centerX" id="MQI-Iw-rVl"/>
+                            <constraint firstItem="fYf-Uu-nUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qgk-Zi-dJm"/>
+                            <constraint firstItem="9bA-8t-tVD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dRC-uF-Itx"/>
+                            <constraint firstItem="fYf-Uu-nUB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="2" id="dzV-am-a6k"/>
+                            <constraint firstItem="TaY-3S-Oci" firstAttribute="centerX" secondItem="zmZ-kZ-pN2" secondAttribute="centerX" id="gv7-jD-JGb"/>
+                            <constraint firstItem="9bA-8t-tVD" firstAttribute="leading" secondItem="fYf-Uu-nUB" secondAttribute="trailing" constant="33" id="zNT-7s-foZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countNumber" destination="TaY-3S-Oci" id="vIn-aN-XKU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
